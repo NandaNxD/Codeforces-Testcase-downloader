@@ -1,0 +1,41 @@
+#pragma GCC optimize("Ofast")
+#pragma GCC target("avx,avx2,fma")
+#include <iostream>
+#include <algorithm>
+#include <stack>
+#include <queue>
+#include <vector>
+#include<unordered_set>
+#include<cmath>
+#include <map>
+#include <cstring>
+#include <set>
+#include <unordered_map>
+using namespace std;
+
+typedef long long ll;
+const ll mod = 1e9 + 7;
+
+#define fio                           \
+    ios_base::sync_with_stdio(false); \
+    cin.tie(NULL)
+
+
+
+int main()
+{
+    fio;
+    //freopen("C:\\Users\\Sharma\\Desktop\\Cpp practise\\input.txt", "r", stdin);
+    //freopen("C:\\Users\\Sharma\\Desktop\\Cpp practise\\output.txt", "w", stdout);
+    
+
+    ll t;
+    cin >> t;
+    //t=1;
+    while (t--)
+    {
+        ll n;
+        cin>>n;
+    }
+    return 0;
+}
