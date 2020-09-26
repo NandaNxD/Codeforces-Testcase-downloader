@@ -6,14 +6,16 @@ import os,math
 import shutil
 import sys
 
-#"C:\Users\Sharma\Desktop\Projects\Python\Contest"
-
 #freopen("", "r", stdin)
 #freopen("output.txt", "w", stdout)
 
 #url = "https://codeforces.com/contest/1342"
 
-os.chdir(os.path.dirname(os.path.abspath(__file__)))    #Change Directory to current directory
+
+if(os.path.dirname(os.path.abspath(__file__))!=os.getcwd()):
+    # Change Directory to current directory
+    os.chdir(os.path.dirname(os.path.abspath(__file__)))
+
 
 print('\n\n*************************** Alert ****************************')
 print('Remember to Change directory of terminal to current directory')
