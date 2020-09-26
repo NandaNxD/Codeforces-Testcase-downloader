@@ -92,10 +92,10 @@ try:
             
         ansx=[]
         for k in out:
-            outputS=re.findall('<pre>\n(.*)?</pre',str(k),re.DOTALL)
+            outputS=re.findall('<pre>(.*)?</pre',str(k),re.DOTALL)
             ansx.append(outputS[0])
 
-        act_ans=""
+        act_ans="\n\nOutput\n"
 
         for i in ansx:
             act_ans+=str(i)
@@ -122,12 +122,12 @@ try:
         filename.writelines(filenameAr)
         filename.close()
         
-        filename=open(str(qname)+"in.txt",'w')      # Input file create
-        filename.write(resin)
+        filename=open(str(qname)+".txt",'w')      # I/O file create
+        filename.write(resin+act_ans)
         filename.close()
-        filename=open(str(qname)+"out.txt",'w')     # Output file create
-        filename.write(act_ans)
-        filename.close()
+        # filename=open(str(qname)+"out.txt",'w')     # Output file create
+        # filename.write(act_ans)
+        # filename.close()
         print('*********************** Done!!! *************************\n\n')
 
 
